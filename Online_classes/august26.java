@@ -1,3 +1,5 @@
+package Online_classes;
+
 public class august26 {
     public static void main(final String[] args) {
         Student s1 = new Student();
