@@ -9,6 +9,7 @@ public class august26 {
         System.out.println(s1.name);
         s2.setID(5);
         s3.setName('n');
+        
 
         System.out.println(s1.getID());
         System.out.println(s1.getName());
