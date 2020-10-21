@@ -1,10 +1,9 @@
 public class dump {
     public static void main(String[] args) {
-    ABC a1= new ABC(10,7,5);
+    ABC a1 = new C();// Within heirarchy therfore it works
     a1.show();
-    ABC a2= new ABC(14,23,11);
-    a2.show();
-    a1.show();
+    B b1 = (B) a1;
+    b1.show();
     }
 }
 
@@ -34,7 +33,10 @@ class ABC{
     final int a =10;
     int b;
     double c;
-    final int d; //Cannot declare final variable without instantiating directly or in the constructor
+    double d;//Cannot declare final variable without instantiating directly or in the constructor
+    ABC(){
+
+    }
     ABC(int x,double c, int d){
         b=x;
         this.c=c;
@@ -43,6 +45,17 @@ class ABC{
 
     void show(){
         System.out.println("a="+a);
-        System.out.println("d="+d);
+    }
+}
+
+class B extends ABC{
+    void show(){
+        System.out.println("This is B");
+    }
+}
+
+class C extends B{
+    void show(){
+        System.out.println("This is C");
     }
 }
