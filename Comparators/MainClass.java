@@ -1,0 +1,2 @@
+package Comparators;
+Class A { } // End of classclass Sample{privatestatic A   a;private static short  s1;public static void main(String[] args) {System.out.println(a + “\t” + s1);} // End of Method}// End of class Sample
