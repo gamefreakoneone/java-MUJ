@@ -2,9 +2,25 @@ package Practice;
 
 
 public class dump {
-    public static void main(String[] args) {
+    public static void main(String args[])
+    { for(int i=0;i<5;i++)
+    {   try
+    {
+        System.out.println("Test");
+        Thread.sleep(1000);
+        System.out.println(i);
 
     }
+    catch(InterruptedException  e)
+    {}
+        System.out.println();
+    }
+        Thread t = new Thread();
+        System.out.println(t.getPriority());
+        System.out.println(t.isAlive());
+        System.out.println(t.isInterrupted());
+    }
+
 }
 
 class A{
