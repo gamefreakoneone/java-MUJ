@@ -213,14 +213,15 @@ class Restaurant {
                 System.out.println(p.name);
             }
         }
-
     }
 }
 //end of class
 
 // create a main class that will display option to user for viewing menu of the restaurant.
 public class Menu {
-    
+    public static void main(String[] args) {
+        Restaurant KFC = new Restaurant();
+    }
 }
 
 // view total revenue of the restaurant
