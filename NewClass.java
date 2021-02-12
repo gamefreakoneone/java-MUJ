@@ -21,7 +21,3 @@ public class NewClass{
 /**
  * driver
  */
-class driver {
-
-    
-}
